@@ -167,6 +167,6 @@ body {
     margin-top: 10px;
 }
 .card-text{
-    text-align: start;
+    text-align: start !important;
     text-wrap: balance;
 }
