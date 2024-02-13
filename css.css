@@ -157,3 +157,7 @@ body {
 .u-locations .locations:first-child{
     margin-top: 10px;
 }
+.card-text{
+        text-align: end;
+    text-wrap: balance;
+}
