@@ -1,0 +1,61 @@
+body{
+    background-color: #eee;
+}
+.testimonials {
+
+    direction: ltr;
+    padding: 100px 0;
+  
+    width: 100%;
+    /* height: 300px; */
+    background: linear-gradient(
+      to right,
+      #008c7f 0%,
+      #008c7f 50%,
+       /* var(--main-Bg) 0%,
+      var(--main-Bg) 50%, */
+      rgb(37, 37, 37) 50%,
+      rgb(37, 37, 37) 100% 
+    );
+  }
+  .contentt {
+    text-transform: capitalize;
+    h2 {
+      color: #fff;
+    }
+  }
+  .cardt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .fas{
+    color: blue;
+  }
+  .cardnt {
+    direction: rtl;
+    background-color: #fff;
+    padding: 13px;
+    width: 300px;
+    p {
+      line-height: 1.4;
+      word-spacing: 2px;
+    }
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      .icon {
+        width: 10px;
+        height: 10px;
+        border: 1px solid #fff;
+        outline: 1px solid #eee;
+      }
+      div {
+        width: 70%;
+      }
+    }
+  }
+  
