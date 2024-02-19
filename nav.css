@@ -1,0 +1,19 @@
+@media only screen and (max-width: 480px) {
+    #nav{
+        position: fixed;
+        bottom: 0;
+        z-index: 100000;
+        width: 100%;
+        padding: 10px 0 0 0;
+        .lin{
+            background-color: #EEE;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            a{
+                font-size: 26px;
+            }
+        }
+    }
+}
