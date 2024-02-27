@@ -1,25 +1,26 @@
 body{
     background-color: #eee;
 }
-.testimonials {
+/* .testimonials {
 
     direction: ltr;
     padding: 100px 0;
   
     width: 100%;
     /* height: 300px; */
-    background: linear-gradient(
+    /* background: linear-gradient(
       to right,
       #008c7f 0%,
       #008c7f 50%,
        /* var(--main-Bg) 0%,
       var(--main-Bg) 50%, */
-      rgb(37, 37, 37) 50%,
-      rgb(37, 37, 37) 100% 
-    );
-  }
+      /* rgb(37, 37, 37) 50%, */
+      /* rgb(37, 37, 37) 100%  */
+    /* ); */
+  /* } */
   .contentt {
     text-transform: capitalize;
+    padding: 100px 0;
     h2 {
       color: #fff;
     }
@@ -68,4 +69,45 @@ body{
   
     border-radius: 50%;
     background-color: #eee;
+  }
+
+
+  .team-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .red-img{
+width: 200px;
+height: 200px;
+
+    img{
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgb(97, 184, 235);
+      box-shadow: -1px -2px 13px 0px rgb(97, 184, 235);
+    }
+  }
+  .team{
+    text-align: center;
+    margin: auto;
+    /* border: 1px solid #000; */
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+      font-size: 30px;
+      margin: 20px 0 !important;
+      margin-bottom: 5px !important;
+   
+    }
+    p{
+      color: #777;
+    }
+    
   }
