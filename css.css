@@ -40,13 +40,13 @@ body {
                 width: 100%;
             }
         }
-        .img::before{
+        /* .img::before{
             content: ""; position: absolute;
             height: 140%;    width: 60%;
             background-color:var(--color-main);
             top: -20%;  left: -10%;
             rotate: -4deg; z-index: -1;
-        }
+        } */
         .info{
             width: 335px;
             
@@ -128,7 +128,7 @@ body {
     background-color: #EEE;
 }
 .ktae{
-    background-color: #EEE;
+    background-color: #fff;
 }
 .tool{
     width: 100%;
@@ -180,6 +180,32 @@ body {
     gap: 15px;
 }
 
-.row.ddddd{
-    justify-content: space-evenly !important;
+.cardsl{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.contnname{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.contnname .card-title{
+    font-weight: bolder;
+}
+.ims{
+    margin: 0 10px;
+}
+.location{
+    background-color: #ecebeb;
+}
+.cont{
+    border: 1px solid gray;
+    padding: 40px 30px;
+  border-radius: 10px;
+  margin: 20px;
+  width: 300px;
 }
