@@ -24,7 +24,7 @@ body {
 .main{
     height: 100vh;
     width: 100%;
-   
+   padding-top: 70px;
     .main-info{
         display: flex;
         align-items: center;
@@ -178,4 +178,8 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
+}
+
+.row.ddddd{
+    justify-content: space-evenly !important;
 }
