@@ -40,13 +40,13 @@ body {
                 width: 100%;
             }
         }
-        /* .img::before{
+        .img::before{
             content: ""; position: absolute;
             height: 140%;    width: 60%;
             background-color:var(--color-main);
             top: -20%;  left: -10%;
-            rotate: -4deg; z-index: -1;
-        } */
+            rotate: 90deg; z-index: -1;
+        }
         .info{
             width: 335px;
             
