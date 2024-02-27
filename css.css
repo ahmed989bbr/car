@@ -43,15 +43,17 @@ body {
         .img::before{
             content: ""; position: absolute;
             /* height: 140%; */
-            height: 120%;
+            height: 130%;
          /* width: 60%; */
          width: 130%;
             /* background-color:var(--color-main); */
             /* background-image: linear-gradient(to right,var(--color-main),#E53402); */
-            background-image: url(sss.png);
+            background-image: url(xxx.jpg);
+            background: position 200px;;
             opacity: 0.3;
             background-size:contain;
-            /* background-repeat: no-repeat; */
+
+            background-repeat: no-repeat;
             top: -20%; 
              /* left: -10%; */
              left: -40%;
