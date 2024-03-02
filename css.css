@@ -52,7 +52,7 @@ body {
             /* background-image: linear-gradient(to right,var(--color-main),#E53402); */
             background-image: url(xxx.jpg);
             background: position 200px;;
-            opacity: 0.3;
+            opacity: 0.9;
             background-size:contain;
 
             background-repeat: no-repeat;
