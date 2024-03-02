@@ -21,6 +21,7 @@ body {
         margin-top: 100px;
         width: 335px;}
 }
+
 .main{
     height: 100vh;
     width: 100%;
@@ -223,3 +224,90 @@ body {
   margin: 20px;
   width: 300px;
 }
+
+
+
+.f-tool {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .ktae {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .cardk {
+    width: 300px;
+    height: 400px; /* تم تقليل الارتفاع ليتناسب مع الصور */
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    background-color: #f9f9f9; /* لون الخلفية */
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out; /* تحويل الكارد عند التحوي */
+  }
+
+  .cardk img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out; /* تأثير الانتقال */
+  }
+
+  .cardk .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* لون خلفية النص */
+    transition: background-color 0.3s ease-in-out; /* تأثير الانتقال */
+  }
+
+  .cardk h2 {
+    margin-top: 0;
+    direction: rtl;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; /* لون النص */
+    transition: color 0.3s ease-in-out; /* تأثير الانتقال */
+  }
+  
+  .cardk p {
+    margin-bottom: 10px;
+    color: #555; /* لون النص */
+    transition: color 0.3s ease-in-out; /* تأثير الانتقال */
+  }
+
+  .cardk:hover {
+    transform: translateY(-10px); /* تحويل الكارد عند التحوي */
+  }
+
+  .cardk:hover img {
+    opacity: 0.7; /* تغيير شفافية الصورة عند التحوي */
+  }
+
+  .cardk:hover .card-content {
+    background-color: rgba(255, 255, 255, 0.7); /* تغيير لون خلفية النص عند التحوي */
+  }
+
+  .cardk:hover h2,
+  .cardk:hover p {
+    color: #000; /* تغيير لون النص عند التحوي */
+  }
+
+  .material-symbols-outlined {
+    vertical-align: middle;
+  }
