@@ -67,88 +67,101 @@
   </nav>
 
     <!-- قسم التقييمات -->
- 
-
-
+    <style>
+      .v-cont{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      .video-card {
+        width: 250px;
+        margin: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+    
+      .video-card video {
+        width: 100%;
+        height: auto;
+      }
+    
+      .video-card button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border: none;
+        border-top: 1px solid #ddd;
+        color: #555;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+    
+      .video-card button:hover {
+        background-color: #ddd;
+      }
+    </style>
+    
     <div class="container mt-9" id="video">
-      <div class="top" style="margin:80px 0 ;"></div>
-        <h1>Video Gallery</h1>
-        <!-- <div class="row gap-md-0">
-            <div class="col-md-4">
-                <div class="card">
-                    <video width="100%" height="400px" controls>
-                        <source src="1.webm" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="card-body">
-                        <h5 class="card-title">Video 1</h5>
-                        <p class="card-text">Description of video 1</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <video width="100%" height="400px" controls>
-                        <source src="2.webm" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="card-body">
-                        <h5 class="card-title">Video 2</h5>
-                        <p class="card-text">Description of video 2</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <video width="100%" height="400px" controls>
-                        <source src="4.webm" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="card-body">
-                        <h5 class="card-title">Video 3</h5>
-                        <p class="card-text">Description of video 3</p>
-                    </div>
-                </div>
-            </div>
-            <div class="m-3"></div>
-            <div class="col-md-4">
-                <div class="card">
-                    <video width="100%" height="400px" controls>
-                        <source src="5.webm" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="card-body">
-                        <h5 class="card-title">Video 3</h5>
-                        <p class="card-text">Description of video 3</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <video width="100%" height="400px" controls>
-                        <source src="7.webm" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="card-body">
-                        <h5 class="card-title">Video 3</h5>
-                        <p class="card-text">Description of video 3</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <video width="100%" height="400px" controls>
-                        <source src="9.webm" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="card-body">
-                        <h5 class="card-title">Video 3</h5>
-                        <p class="card-text">Description of video 3</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+      <div class="top" style="margin: 80px 0;"></div>
+      <h1>Video Gallery</h1>
+      <div class="v-cont">
+        <div class="video-card">
+          <video src="v1.webm" poster="222.jpg" controls></video>
+          <button>تحدث لدعم</button>
+        </div>
+        <div class="video-card">
+          <video src="v2.webm" poster="222.jpg" controls></video>
+          <button>تحدث لدعم</button>
+        </div>
+        <div class="video-card">
+          <video src="v3.webm" poster="222.jpg" controls></video>
+          <button>تحدث لدعم</button>
+        </div>
+        <div class="video-card">
+          <video src="v4.webm" poster="222.jpg" controls></video>
+          <button>تحدث لدعم</button>
+        </div>
+        <div class="video-card">
+          <video src="v5.webm" poster="222.jpg" controls></video>
+          <button>تحدث لدعم</button>
+        </div>
+        <div class="video-card">
+          <video src="v6.webm" poster="222.jpg" controls></video>
+          <button>تحدث لدعم</button>
+        </div>
+      </div>
     </div>
+    
+
+<script>
+  const videos = document.querySelectorAll('video');
+  const buttons = document.querySelectorAll('button');
+
+  videos.forEach(video => {
+    video.addEventListener("mouseenter", () => {
+      video.play();
+      pauseOtherVideos(video);
+    });
+  });
+
+  videos.forEach(video => {
+    video.addEventListener("mouseleave", () => {
+      video.pause();
+      pauseOtherVideos(video);
+    });
+  });
+  function pauseOtherVideos(currentVideo) {
+    videos.forEach(video => {
+      if (video !== currentVideo) {
+        video.pause();
+      }
+    });
+  }
+</script>
 
 
 
@@ -163,7 +176,7 @@
                 <div class="team">
                   <div class="red-img"><img src="حسن اشرف.jpg" alt="">
                   <div class="twseq">
-                    <video class="vid" src="توسيق.mp4" loop autoplay muted></video>
+                    <video class="vid" src="توسيق.webm" loop autoplay muted></video>
                   </div>
                   </div>
                   <div class="title-team">
@@ -519,7 +532,7 @@
   
                 <p> <span>(201207555192)</span> </p>
   
-              <p> <span> <a href="mailto:promediavip@gmail.com">promediavip@gmail.com</a> </span> </p>
+                <p> <span> <a href="mailto:info@tawfiqia.com">info@google.com</a> </span> </p>
   
               </div>
             </div>
